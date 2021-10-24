@@ -837,6 +837,16 @@
   border: 2px solid #bdbdbd;
 }
 
+.j-main-mb {
+  margin-bottom: 125px;
+}
+
+@media only screen and (min-width: 576px) {
+  .j-main-mb {
+    margin-bottom: 200px;
+  }
+}
+
 .j-main-banner {
   text-align: center;
   margin-bottom: 60px;
@@ -915,18 +925,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 768px) {
   .j-main-act-card {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .j-main-act-card {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 }
 
@@ -994,6 +1004,13 @@
   font-weight: bold;
   font-size: 32px;
   font-family: "Inter", "Noto Sans TC", sans-serif;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 576px) {
+  .j-main-btn {
+    margin-top: 40px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1008,5 +1025,97 @@
 
 .j-main-btn--secondary:hover {
   background: #96bb7c;
+}
+
+.j-main-search-wrap {
+  text-align: center;
+}
+
+.j-main-search__title {
+  font-family: "Anton", sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 576px) {
+  .j-main-search__title {
+    -webkit-transform: scale(1.7, 1);
+            transform: scale(1.7, 1);
+    font-size: 20 px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .j-main-search__title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .j-main-search__title {
+    font-size: 40px;
+    -webkit-transform: scale(1.7, 1);
+            transform: scale(1.7, 1);
+  }
+}
+
+.j-main-search__input-row {
+  margin: 40px auto 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .j-main-search__input-row div {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .j-main-search__input-row {
+    width: 85%;
+  }
+}
+
+.j-main-search__input {
+  font-weight: 600;
+  font-family: "Font Awesome 6 Free";
+  border: 3px solid black;
+  padding: 20px;
+  font-size: 24px;
+  width: 70%;
+  margin: 0 auto 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .j-main-search__input {
+    width: 100%;
+  }
+}
+
+.j-main-search__input::-webkit-input-placeholder {
+  color: #b0b8bc;
+}
+
+.j-main-search__input:-ms-input-placeholder {
+  color: #b0b8bc;
+}
+
+.j-main-search__input::-ms-input-placeholder {
+  color: #b0b8bc;
+}
+
+.j-main-search__input::placeholder {
+  color: #b0b8bc;
+}
+
+.j-main-tag-btn {
+  color: #5d6970;
+  border: 2px solid #5d6970;
+  border-radius: 100px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  width: 117px;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */
