@@ -7,6 +7,8 @@
 // font-family: 'Inter', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap");
+
 .j-main-mb {
   margin-bottom: 125px;
   @include respond(team-sm) {
@@ -14,6 +16,101 @@
   }
 }
 
+.j-main-meetup {
+  font-family: "Anton", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__banner {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+
+    @include respond(team-sm) {
+      font-size: 28px;
+    }
+    @include respond(team-md) {
+      font-size: 33px;
+    }
+    @include respond(team-lg) {
+      font-size: 40px;
+      // transform: scale(1.2, 1);
+    }
+  }
+
+  &__logo {
+    font-size: 60px;
+    @include respond(team-sm) {
+      font-size: 80px;
+    }
+    @include respond(team-md) {
+      font-size: 100px;
+    }
+    @include respond(team-lg) {
+      font-size: 130px;
+    }
+
+    letter-spacing: 2px;
+    display: inline-block;
+    transform: scale(1.7, 1);
+    background-size: 200%;
+    background-image: linear-gradient(
+      45deg,
+      #ff731f,
+      #ff6e1b,
+      #ff6918,
+      #f5af7d,
+      #fd9146,
+      #fe8b3c,
+      #fe8431,
+      #ff7d26,
+      #ff7822,
+      #ff731f,
+      #ff6e1b,
+      #ff6918,
+      #ff7822
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: meetup-shine 2s infinite ease;
+  }
+}
+
+@keyframes meetup-shine {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.j-main-bg-banner {
+  color: rgba(255, 221, 191, 0.4);
+  font-size: 150px;
+  font-family: "Kanit", sans-serif;
+  position: absolute;
+  top: 400px;
+  right: -200px;
+  transform: all 0.5s;
+
+  transform: rotate(-4deg);
+}
+
+.j-main-bg-banner--right {
+  top: 280px;
+  right: 0;
+  left: -200px;
+}
+
+.j-main-bg-banner--wrap {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+/////////////////////////////////////////
 .j-main-banner {
   text-align: center;
   margin-bottom: 60px;
@@ -34,19 +131,19 @@
 
     // 避免scale(2,1)後 更容易造成爆版
     display: inline-block;
-    transform: scale(1.7, 1);
+    transform: scale(1.5, 1);
 
     @include respond(team-sm) {
-      font-size: 36px;
+      font-size: 24px;
     }
 
     @include respond(team-md) {
-      font-size: 50px;
+      font-size: 30px;
     }
 
     @include respond(team-lg) {
-      font-size: 66px;
-      transform: scale(2, 1);
+      font-size: 50px;
+      // transform: scale(1.5, 1);
     }
   }
 
@@ -57,15 +154,15 @@
     letter-spacing: 1.5px;
 
     @include respond(team-sm) {
-      font-size: 24px;
+      font-size: 20px;
     }
 
     @include respond(team-md) {
-      font-size: 28px;
+      font-size: 24px;
     }
 
     @include respond(team-lg) {
-      font-size: 32px;
+      font-size: 28px;
     }
   }
 }
@@ -82,7 +179,7 @@
   }
 
   @include respond(team-lg) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   &:hover {
@@ -118,15 +215,15 @@
   }
 
   &__title {
-    margin: 30px 0;
+    margin: 30px 0 22px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 28px;
     font-family: "Noto Sans TC", sans-serif;
     letter-spacing: 1.5px;
   }
 
   &__content {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     font-family: "Noto Sans TC", sans-serif;
     letter-spacing: 1px;
@@ -140,7 +237,7 @@
 .j-main-btn {
   width: 294px;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 24px;
   font-family: "Inter", "Noto Sans TC", sans-serif;
 
   margin-top: 20px;
@@ -149,9 +246,9 @@
     margin-top: 40px;
   }
 
-  @include respond(team-lg) {
-    width: 408px;
-  }
+  // @include respond(team-lg) {
+  //   width: 408px;
+  // }
 
   &--secondary {
     background-color: #025930;
@@ -168,12 +265,11 @@
 .j-main-search {
   &__title {
     font-family: "Anton", sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     letter-spacing: 1px;
     display: inline-block;
 
     @include respond(team-sm) {
-      transform: scale(1.7, 1);
       font-size: 20 px;
     }
 
@@ -183,7 +279,7 @@
 
     @include respond(team-lg) {
       font-size: 40px;
-      transform: scale(1.7, 1);
+      // transform: scale(1.7, 1);
     }
   }
 
@@ -198,7 +294,7 @@
     }
 
     @include respond(team-lg) {
-      width: 85%;
+      width: 80%;
     }
   }
 
@@ -208,9 +304,7 @@
 
     border: 3px solid black;
     padding: 20px;
-    font-size: 24px;
-
-    // margin-bottom: 15px;
+    font-size: 18px;
 
     width: 70%;
     margin: 0 auto 15px;

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap");
 .team-primary {
   color: #e88239;
 }
@@ -847,6 +848,119 @@
   }
 }
 
+.j-main-meetup {
+  font-family: "Anton", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.j-main-meetup__banner {
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
+@media only screen and (min-width: 576px) {
+  .j-main-meetup__banner {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .j-main-meetup__banner {
+    font-size: 33px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .j-main-meetup__banner {
+    font-size: 40px;
+  }
+}
+
+.j-main-meetup__logo {
+  font-size: 60px;
+  letter-spacing: 2px;
+  display: inline-block;
+  -webkit-transform: scale(1.7, 1);
+          transform: scale(1.7, 1);
+  background-size: 200%;
+  background-image: linear-gradient(45deg, #ff731f, #ff6e1b, #ff6918, #f5af7d, #fd9146, #fe8b3c, #fe8431, #ff7d26, #ff7822, #ff731f, #ff6e1b, #ff6918, #ff7822);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-animation: meetup-shine 2s infinite ease;
+          animation: meetup-shine 2s infinite ease;
+}
+
+@media only screen and (min-width: 576px) {
+  .j-main-meetup__logo {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .j-main-meetup__logo {
+    font-size: 100px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .j-main-meetup__logo {
+    font-size: 130px;
+  }
+}
+
+@-webkit-keyframes meetup-shine {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes meetup-shine {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.j-main-bg-banner {
+  color: rgba(255, 221, 191, 0.4);
+  font-size: 150px;
+  font-family: "Kanit", sans-serif;
+  position: absolute;
+  top: 400px;
+  right: -200px;
+  -webkit-transform: all 0.5s;
+          transform: all 0.5s;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+}
+
+.j-main-bg-banner--right {
+  top: 280px;
+  right: 0;
+  left: -200px;
+}
+
+.j-main-bg-banner--wrap {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
 .j-main-banner {
   text-align: center;
   margin-bottom: 60px;
@@ -864,27 +978,25 @@
   letter-spacing: 2px;
   font-size: 22px;
   display: inline-block;
-  -webkit-transform: scale(1.7, 1);
-          transform: scale(1.7, 1);
+  -webkit-transform: scale(1.5, 1);
+          transform: scale(1.5, 1);
 }
 
 @media only screen and (min-width: 576px) {
   .j-main-banner__title {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .j-main-banner__title {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .j-main-banner__title {
-    font-size: 66px;
-    -webkit-transform: scale(2, 1);
-            transform: scale(2, 1);
+    font-size: 50px;
   }
 }
 
@@ -897,19 +1009,19 @@
 
 @media only screen and (min-width: 576px) {
   .j-main-banner__sub {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .j-main-banner__sub {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .j-main-banner__sub {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
@@ -936,7 +1048,7 @@
 
 @media only screen and (min-width: 992px) {
   .j-main-act-card {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
 
@@ -978,15 +1090,15 @@
 }
 
 .j-main-act-card__title {
-  margin: 30px 0;
+  margin: 30px 0 22px;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Noto Sans TC", sans-serif;
   letter-spacing: 1.5px;
 }
 
 .j-main-act-card__content {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   font-family: "Noto Sans TC", sans-serif;
   letter-spacing: 1px;
@@ -1002,7 +1114,7 @@
 .j-main-btn {
   width: 294px;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 24px;
   font-family: "Inter", "Noto Sans TC", sans-serif;
   margin-top: 20px;
 }
@@ -1010,12 +1122,6 @@
 @media only screen and (min-width: 576px) {
   .j-main-btn {
     margin-top: 40px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .j-main-btn {
-    width: 408px;
   }
 }
 
@@ -1033,15 +1139,13 @@
 
 .j-main-search__title {
   font-family: "Anton", sans-serif;
-  font-size: 25px;
+  font-size: 24px;
   letter-spacing: 1px;
   display: inline-block;
 }
 
 @media only screen and (min-width: 576px) {
   .j-main-search__title {
-    -webkit-transform: scale(1.7, 1);
-            transform: scale(1.7, 1);
     font-size: 20 px;
   }
 }
@@ -1055,8 +1159,6 @@
 @media only screen and (min-width: 992px) {
   .j-main-search__title {
     font-size: 40px;
-    -webkit-transform: scale(1.7, 1);
-            transform: scale(1.7, 1);
   }
 }
 
@@ -1073,7 +1175,7 @@
 
 @media only screen and (min-width: 992px) {
   .j-main-search__input-row {
-    width: 85%;
+    width: 80%;
   }
 }
 
@@ -1082,7 +1184,7 @@
   font-family: "Font Awesome 6 Free";
   border: 3px solid black;
   padding: 20px;
-  font-size: 24px;
+  font-size: 18px;
   width: 70%;
   margin: 0 auto 15px;
 }
